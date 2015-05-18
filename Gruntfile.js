@@ -26,14 +26,14 @@ module.exports = function (grunt) {
         ],
         options: {
           spawn: false,
-          livereload: LIVERELOAD_PORT
+          //livereload: LIVERELOAD_PORT
         },
         tasks: ['build']
       }
     },
     connect: {
       options: {
-        port: 9000,
+        port: 8088,
         // change this to '0.0.0.0' to access the server from outside
         hostname: 'localhost'
       },
@@ -50,7 +50,7 @@ module.exports = function (grunt) {
     },
     open: {
       server: {
-        path: 'http://localhost:9000'
+        path: 'http://localhost:8088'
       }
     },
     copy: {
